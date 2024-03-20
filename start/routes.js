@@ -1,5 +1,8 @@
 'use strict'
 
+const { route } = require('@adonisjs/framework/src/Route/Manager')
+const UserController = require('../app/Controllers/Http/UserController')
+
 /*
 |--------------------------------------------------------------------------
 | Routes
@@ -20,5 +23,9 @@ Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
 
-Route.get('/getUsers', 'UserController.getUsers')
+Route.get('/showUsers', 'UserController.showUsers')
+Route.get('/showUser/:id', 'UserController.showUser')
+Route.patch('/editUser/:id', 'UserController.editUser')
 Route.post('/register', 'UserController.registerUsers')
+Route.delete('/delUser/:id', 'UserController.delUser')
+Route.post('/loginUser', 'UserController.loginUser')
