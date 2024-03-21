@@ -19,7 +19,7 @@ class User extends Model {
   }
 
   static get visible() {
-    return ['id','nameUser', 'emailUser','IDUser'] 
+    return [ 'id','nameUser', 'emailUser','IDUser','created_at' ] 
   }
 }
 

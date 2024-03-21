@@ -8,7 +8,7 @@ class UserSeeder {
     await User.create({
       nameUser: 'Caio Oliveira',
       pwdUser: 'Segov@Segov', 
-      emailUser: 'fc_caio@gmail.com',
+      emailUser: 'fc_caio@pm.rj.gov.br',
       IDUser: '5143763-5' 
     })
   }

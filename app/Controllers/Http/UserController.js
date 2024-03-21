@@ -29,7 +29,7 @@ class UserController {
   async showUsers({ response }) {
 
     try {
-      const users = await User.query().select("id","nameUser", "emailUser","IDUser").fetch();
+      const users = await User.query().select("id","nameUser", "emailUser","IDUser","created_at").fetch();
 
       return response.json(users);
 

@@ -23,9 +23,11 @@ Route.get('/', () => {
   return { greeting: 'Hello world in JSON' }
 })
 
-Route.get('/showUsers', 'UserController.showUsers')
-Route.get('/showUser/:id', 'UserController.showUser')
-Route.patch('/editUser/:id', 'UserController.editUser')
-Route.post('/register', 'UserController.registerUsers')
-Route.delete('/delUser/:id', 'UserController.delUser')
+Route.get('/showUsers', 'UserController.showUsers').middleware('auth')
+Route.get('/showUser/:id', 'UserController.showUser').middleware('auth')
+Route.patch('/editUser/:id', 'UserController.editUser').middleware('auth')
+Route.post('/register', 'UserController.registerUsers').middleware('auth')
+Route.delete('/delUser/:id', 'UserController.delUser').middleware('auth')
 Route.post('/loginUser', 'UserController.loginUser')
+
+Route.post('/registerResma', 'ResmaController.registerResma').middleware('auth')
