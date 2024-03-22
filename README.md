@@ -1,4 +1,4 @@
-## Resma Application
+## Resma App
 Bem-vindo à documentação do projeto Resma! Esta aplicação é um sistema de gerenciamento de solicitações de resmas, onde os usuários podem cadastrar, visualizar e excluir solicitações de resmas. A autenticação é feita utilizando JSON Web Tokens (JWT).
 
 ## Funcionalidades Principais
