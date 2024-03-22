@@ -21,7 +21,7 @@ class UserController {
 
     } catch (error) {
 
-      return response.status(500).json({ error: "Erro ao registrar usuário" });
+      return response.status(500).json({ error: error });
     }
   }
 

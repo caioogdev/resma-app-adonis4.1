@@ -8,6 +8,10 @@ class Resma extends Model {
     static get visible(){
         return [ 'user_id','nameRequester','IDRequester','baseRequester','resmaQTT'  ]
     }
+
+    user() {
+        return this.belongsTo('App/Models/User')
+    }
 }
 
 module.exports = Resma
