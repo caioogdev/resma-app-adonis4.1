@@ -6,10 +6,10 @@ const User = use('App/Models/User')
 class UserSeeder {
   async run () {
     await User.create({
-      nameUser: 'Caio Oliveira',
-      pwdUser: 'Segov@Segov', 
-      emailUser: 'fc_caio@pm.rj.gov.br',
-      IDUser: '5143763-5' 
+      nameUser: 'Usuario Teste',
+      pwdUser: 'senha12345', 
+      emailUser: 'teste@gmail.com',
+      IDUser: '12345678' 
     })
   }
 }
